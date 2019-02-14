@@ -1,9 +1,119 @@
 <html>
     <head>
+        <title>Shapes</title>
         <script src="ShapesBehviour.js"></script>
+
         <link rel="stylesheet" href="ShapesStyle.css">
+        <link rel="stylesheet" href="colorpick.css">
+        <link rel="stylesheet" href="index.css">
+
     </head>
     <body>
-        sondos
+       <div class="nav">
+      <ul>
+        <li > <a href="index.html">Home</a></li>
+        <li><a  href="English.html">English</a></li>
+        <li ><a href="Math.html">Math</a></li>
+        <li ><a href="Shapes.html">Shapes</a></li>
+        <li ><a href="">About</a></li>
+       
+      </ul>
+    </div> 
+        <div id="header" > 
+
+        <h3>click on the shape to know about it</h3>
+        </div>
+        
+        <div id="shapesdiv">
+        <div id="square"></div>
+        <div id="rectangle"></div>
+        <div id="circle"></div>
+        <div id="oval"></div>
+        <div id="triangle-up"></div>
+        <div id="parallelogram"></div>
+        <div id="hexagon"></div>
+        <div id="pentagon"></div>
+    
+        </div>
+        <div class="sidecircle"></div>
+
+        
+        <div id="vidoes">
+        
+        <video id="triangvid" src="Videos/triangle.mp4" controls></video>
+        <video id="sqarevid" src="Videos/sqare.mp4" controls></video>
+        <video id="rectgvid" src="Videos/rect.mp4" controls></video>
+        <video id="circlevid" src="Videos/circile.mp4" controls></video>
+        <video id="ovalvid" src="Videos/oval.mp4" controls></video>
+        <video id="parallvid" src="Videos/parall.mp4" controls></video>
+        <video id="hexagvid" src="Videos/hexagon.mp4" controls></video>
+        <video id="pebntavid" src="Videos/pentagon.mp4" controls></video>
+            
+        <button id="bakbtn">Back</button>
+        </div>
+        
+        <div id="colorsdiv">
+        <h3 id="colorhead">Color The Shapes</h3>
+
+        <div style="text-align: center">
+            <button id="showsquare">square</button>
+            <button id="showrect">rectangle</button>
+            <button id="showcircle">circle</button>
+            <button id="showoval">oval</button>
+            <button id="showtrian">triangle</button>
+            <button id="showparall">parallelogram</button>
+<!--
+            <button id="showhexagon">hexagon</button>
+            <button id="showpentagon">pentagon</button>
+-->
+            
+            </div>
+        <div id="whitesquare"></div>
+        <div id="whiterect"></div>
+        <div id="whitesircle"></div>
+        <div id="whiteoval"></div>
+        <div id="whitetriangle"></div>
+        <div id="whiteparallelogram"></div>
+        <div id="whitehexagon"></div>
+        <div id="whitepentagon"></div>
+<input type="hidden" id="shapeid"> 
+        <div id="colorpicker">
+            
+            	<div class="picker"></div>
+
+        </div>    
+            
+            
+        </div>
+        
+        <script src="jquery-3.3.1.js"></script>
+	<script src="colorpick.js"></script>
+	<script>
+		$(".picker").colorPick({
+			'initialColor' : '#8e44ad',
+			'palette': ["#1abc9c", "#16a085", "#2ecc71", "#27ae60", "#3498db", "#2980b9", "#9b59b6", "#8e44ad", "#34495e", "#2c3e50", "#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#ecf0f1"],
+			'onColorSelected': function() {
+				this.element.css({'backgroundColor': this.color, 'color': this.color});
+                
+                $("#whitesquare").css('backgroundColor',this.color);
+                $("#whiterect").css('backgroundColor',this.color);
+                $("#whitesircle").css('backgroundColor',this.color);
+                $("#whiteoval").css('backgroundColor',this.color);
+                $("#whitetriangle").css('border-bottom-color',this.color);
+                $("#whiteparallelogram").css('backgroundColor',this.color);
+                
+                
+//                $("#whitehexagon").css('backgroundColor',this.color);
+//                $("#whitehexagon").css('border-bottom-color',this.color);
+//                $("#whitehexagon").css('border-top-color',this.color);
+//                
+//                
+//                
+//                
+//                $("#whitepentagon").css('border-color',this.color);
+//                $("#whitepentagon").css('border-color',this.color);
+			}
+		});
+	</script>
     </body>
 </html>
