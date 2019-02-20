@@ -266,19 +266,7 @@ showparallbtn.addEventListener('click',function(){
     
     
     
-    
-    
-    
-    
-    
-    /////////coloring/////////
-    
-//    var colorButton = document.getElementById("primary_color");
-//    colorButton.onchange = function() {
-//
-//        colorDiv.style.background = colorButton.value;
-//    }
-    
+ 
     
     
     

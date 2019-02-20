@@ -1,8 +1,396 @@
 <html>
     <head>
-        <script src="EnglishBehvoiur.js"></script>
+         <script src="jquery-3.3.1.js"></script>
+     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+                <link rel="stylesheet" href="Index.css" />
+
         <link rel="stylesheet" href="EnglishStyle.css">
+        <link rel="stylesheet" href="path/to/sweet-alert.css" />
     </head>
     <body>
+        <div class="nav" id="top">
+      <ul>
+        <li > <a  href="index.html">Home</a></li>
+        <li><a  href="English.html">English</a></li>
+        <li ><a href="Math.html">Math</a></li>
+        <li ><a href="Shapes.html">Shapes</a></li>
+        
+       
+      </ul>
+    </div>  
+        <div id="palyicon">
+            <img src="Images/lettericon.png" style="height:60px;width: 60px;">
+        <h4>Play With Lettres</h4>
+        
+        </div>
+        <div class="alpha"  id="alphadiv"style="background-image: url(images/back2.jpg)">
+            
+            <div id="divintro">
+            <h1>Welcome To Alphabet</h1>
+                 
+                 
+                <button id="start"  class="startbtn">Start</button>
+            </div>
+            
+            
+           
+            
+            <div class="animateddiv" id="animation" style="display: none">
+                <div id="font1">
+               <h2>Listening practice</h2> 
+                    <img src="images/listen1.jpeg" id="listen1" width="100px">
+                </div>
+                
+                <div id="font2">
+                <h3>Click on icons below to hear each letter sound in English</h3>
+               <img src="images/listen2crop.jpg" id="listen2" width="100px">
+                </div>
+                 <img src="images/listen4.jpg" id="listen4" width="100px">
+                 <img src="images/animal2f.jpg" id="intro2" usemap="#alphabetmap">
+              <img src="images/listen3.png" id="listen3" width="100px">
+                 <map name="alphabetmap">
+                  
+                <area shape="rect" coords="32,24,69,61" onclick="playa()">
+                <area shape="rect" coords="102,20,140,58" onclick="playb()">
+                <area shape="rect" coords="185,21,206,58" onclick="playc()">
+                <area shape="rect" coords="258,26,294,57" onclick="playd()">
+                <area shape="rect" coords="343,16,378,57" onclick="playe()">
+                     
+                     
+                <area shape="rect" coords="420,17,450,59" onclick="playf()">
+                <area shape="rect" coords="491,23,524,61" onclick="playg()">
+                     
+                <area shape="rect" coords="27,97,71,137" onclick="playh()">
+                     
+                <area shape="rect" coords="105,94,125,136" onclick="playi()">
+                     
+                <area shape="rect" coords="179,86,192,125" onclick="playj()">
+                <area shape="rect" coords="241,94,285,132" onclick="playk()">
+                     
+                <area shape="rect" coords="328,95,358,128" onclick="playl()">
+                     
+                <area shape="rect" coords="402,94,447,133" onclick="playm()">
+                <area shape="rect" coords="485,96,527,137" onclick="playn()">
+                     
+                <area shape="rect" coords="30,166,68,201" onclick="playo()">
+                <area shape="rect" coords="117,166,142,196" onclick="playp()">
+                     
+                <area shape="rect" coords="204,169,257,209" onclick="playq()">
+                <area shape="rect" coords="299,164,346,205" onclick="playr()">
+                     
+                <area shape="rect" coords="398,168,431,203" onclick="plays()">
+                <area shape="rect" coords="486,168,519,205" onclick="playt()">
+                     
+                <area shape="rect" coords="28,240,69,277" onclick="playu()">
+                <area shape="rect" coords="114,243,150,272" onclick="playv()">
+                     
+                <area shape="rect" coords="200,243,252,279" onclick="playw()">
+                <area shape="rect" coords="307,237,346,297" onclick="playx()">
+                     
+                <area shape="rect" coords="391,240,423,281" onclick="playy()">
+                <area shape="rect" coords="482,243,520,282" onclick="playz()">
+                
+                </map>
+
+
+                      </div>
+                
+              
+           
+            
+            
+            
+           
+            
+            <div class="divs" id="div1" style="display: none">
+                <img src="/images/songimg.jpg" id="songimg"  height="350px" width="900px" >       
+            </div>
+            
+             
+            
+      <div class="divs" id="div3" style="display: none">
+      <p id="PA" class="letter" style="color: red">Aa</p>
+      <p id="word" class="words" style="color: red">Apple</p>
+          <audio src="audios/Apple.mp3" id="audio3"></audio>
+      <img src="images/Red_Apple.png" id="apple" class="img">
+          <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+      </div>
+            
+            <div class="divs" id="div4" style="display: none">
+      <p id="PB" class="letter" style="color: blue">Bb</p>
+      <p id="word" class="words" style="color: blue">ball</p>
+                 <audio src="audios/ball.mp3" id="audio4"></audio>
+      <img src="images/ball.png" id="ball" class="img" width="150px">
+     <img src="images/back.jpg" class="back"  width="100px" height="150px">              
+      </div>
+            
+            
+            <div class="divs" id="div5" style="display: none">
+           <p id="PC" class="letter" style="color: purple">Cc</p>
+           <p id="word" class="words" style="color: purple">Cat</p>
+                 <audio src="audios/cataudio.mp3" id="audio5"></audio>
+            <img src="images/cat.png" id="cat" class="img" width="250px">
+           <img src="images/back.jpg" class="back"  width="100px" height="150px">    
+            </div>
+            
+            
+              <div class="divs" id="div6" style="display: none">
+           <p id="PD" class="letter" style="color:greenyellow">Dd</p>
+           <p id="word" class="words" style="color: greenyellow">Dog</p>
+                   <audio src="audios/dog.mp3" id="audio6"></audio>
+            <img src="images/dog2.png" id="dog" class="img"  width="200px">
+            <img src="images/back.jpg" class="back"  width="100px" height="150px">    
+
+           
+            </div>
+            
+             <div class="divs" id="div7" style="display: none">
+           <p id="PE" class="letter" style="color:gray">Ee</p>
+           <p id="word" class="words" style="color: gray">elephant</p>
+            <audio src="audios/elephant.mp3" id="audio7"></audio>
+            <img src="images/e.png" id="elephant" class="img" width="250px">
+            <img src="images/back.jpg" class="back"  width="100px" height="150px">    
+
+            </div>
+            
+            
+             <div class="divs" id="div8" style="display: none">
+           <p id="PF" class="letter" style="color:orangered">Ff</p>
+           <p id="word" class="words" style="color: orangered">Fish</p>
+            <audio src="audios/fish.mp3" id="audio8"></audio>
+            <img src="images/fish.png" width="150px" id="fish" class="img">
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+            
+             <div class="divs" id="div9" style="display: none">
+           <p id="PG" class="letter" style="color:brown">Gg</p>
+           <p id="word" class="words" style="color: brown">gorilla</p>
+            <audio src="audios/gorilla.mp3" id="audio9"></audio>
+            <img src="images/gorilla.png" width="150px" id="g" class="img">
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+        
+            
+             <div class="divs" id="div10" style="display: none">
+           <p id="PH" class="letter" style="color:darkgreen">Hh</p>
+           <p id="word" class="words" style="color: darkgreen">Hat</p>
+            <audio src="audios/hat.mp3" id="audio10"></audio>
+            <img src="images/hat.png" width="250px" id="h" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+            <div class="divs" id="div11" style="display: none">
+           <p id="PI" class="letter" style="color:blue">Ii</p>
+           <p id="word" class="words" style="color: blue">igloo</p>
+            <audio src="audios/igloo.mp3" id="audio11"></audio>
+            <img src="images/igloo.png" width="250px" id="i" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+             <div class="divs" id="div12" style="display: none">
+           <p id="Pj" class="letter" style="color:fuchsia">Jj</p>
+           <p id="word" class="words" style="color: fuchsia">Juice</p>
+            <audio src="audios/juice.mp3" id="audio12"></audio>
+            <img src="images/juice2.png" width="250px" id="j" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+            <div class="divs" id="div13" style="display: none">
+           <p id="Pk" class="letter" style="color:fuchsia">Kk</p>
+           <p id="word" class="words" style="color: fuchsia">kangro</p>
+            <audio src="audios/kangro.mp3" id="audio13"></audio>
+            <img src="images/kan2.png" width="250px" id="k" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+              <div class="divs" id="div14" style="display: none">
+           <p id="Pl" class="letter" style="color:darkviolet">Ll</p>
+           <p id="word" class="words" style="color: darkviolet">Lion</p>
+            <audio src="audios/lion.mp3" id="audio14"></audio>
+            <img src="images/lionjpg.jpg" width="250px" id="l" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+             <div class="divs" id="div15" style="display: none">
+           <p id="Pm" class="letter" style="color:firebrick">Mm</p>
+           <p id="word" class="words" style="color: firebrick">Monkey</p>
+            <audio src="audios/monkey.mp3" id="audio15"></audio>
+            <img src="images/monkey.jpg" width="250px" id="m" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+             <div class="divs" id="div16" style="display: none">
+           <p id="Pn" class="letter" style="color:darkred">Nn</p>
+           <p id="word" class="words" style="color: darkred">No</p>
+            <audio src="audios/no.mp3" id="audio16"></audio>
+            <img src="images/no.png" width="250px" id="n" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+             <div class="divs" id="div17" style="display: none">
+           <p id="Po" class="letter" style="color:deepskyblue">Oo</p>
+           <p id="word" class="words" style="color: deepskyblue">octpus</p>
+            <audio src="audios/octpus.mp3" id="audio17"></audio>
+            <img src="images/octpus.jpg" width="250px" id="o" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+            <div class="divs" id="div18" style="display: none">
+           <p id="Pp" class="letter" style="color:darkslategray">Pp</p>
+           <p id="word" class="words" style="color: darkslategray">Pig</p>
+            <audio src="audios/pig.mp3" id="audio18"></audio>
+            <img src="images/p2.jpg" width="250px" id="p" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+             <div class="divs" id="div19" style="display: none">
+           <p id="Pq" class="letter" style="color:darkslateblue">Qq</p>
+           <p id="word" class="words" style="color: darkslateblue">Question</p>
+            <audio src="audios/question.mp3" id="audio19"></audio>
+            <img src="images/question.png" width="250px" id="q" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+            <div class="divs" id="div20" style="display: none">
+           <p id="Pr" class="letter" style="color:darksalmon">Rr</p>
+           <p id="word" class="words" style="color: darksalmon">Ring</p>
+            <audio src="audios/ring.mp3" id="audio20"></audio>
+            <img src="images/ring.jpg" width="250px" id="r" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+            <div class="divs" id="div21" style="display: none">
+           <p id="Ps" class="letter" style="color:deepskyblue">Ss</p>
+           <p id="word" class="words" style="color: deepskyblue">Sun</p>
+            <audio src="audios/sun.mp3" id="audio21"></audio>
+            <img src="images/s.jpg" width="250px" id="s" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+            <div class="divs" id="div22" style="display: none">
+           <p id="Pt" class="letter" style="color:deepskyblue">Tt</p>
+           <p id="word" class="words" style="color: deepskyblue">Train</p>
+            <audio src="audios/train.mp3" id="audio22"></audio>
+            <img src="images/t2.jpg" width="250px" id="t" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+              <div class="divs" id="div23" style="display: none">
+           <p id="Pu" class="letter" style="color:darkorange">Uu</p>
+           <p id="word" class="words" style="color: darkorange">Umbrella</p>
+            <audio src="audios/umbrella.mp3" id="audio23"></audio>
+            <img src="images/u2.jpg" width="250px" id="u" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+            <div class="divs" id="div24" style="display: none">
+           <p id="Pv" class="letter" style="color:cornflowerblue">Vv</p>
+           <p id="word" class="words" style="color: cornflowerblue">Van</p>
+            <audio src="audios/van.mp3" id="audio24"></audio>
+            <img src="images/van2.jpg" width="250px" id="v" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+            <div class="divs" id="div25" style="display: none">
+           <p id="Pw" class="letter" style="color:darkmagenta">Ww</p>
+           <p id="word" class="words" style="color: darkmagenta">Watch</p>
+            <audio src="audios/watch.mp3" id="audio25"></audio>
+            <img src="images/w.jpg" width="250px" id="w" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+             <div class="divs" id="div26" style="display: none">
+           <p id="Px" class="letter" style="color:yellow">Xx</p>
+           <p id="word" class="words" style="color: yellow">box</p>
+            <audio src="audios/xbox.mp3" id="audio26"></audio>
+            <img src="images/box.ico" width="250px" id="x" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+             <div class="divs" id="div27" style="display: none">
+           <p id="Py" class="letter" style="color:orange">Yy</p>
+           <p id="word" class="words" style="color: orange">yellow</p>
+            <audio src="audios/yellow.mp3" id="audio27"></audio>
+            <img src="images/yellow.png" width="250px" id="y" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+            
+             <div class="divs" id="div28" style="display: none">
+           <p id="Pz" class="letter" style="color:aqua">Zz</p>
+           <p id="word" class="words" style="color: aqua">Zoo</p>
+            <audio src="audios/zoo.mp3" id="audio28"></audio>
+            <img src="images/zoo.png" width="250px" id="z" class="img" >
+            <img src="images/back.jpg" class="back"  width="100px" height="150px"> 
+            </div>
+       </div>
+       <br>
+        <div id="alphaicon">
+        <a href="#top">
+        <img src="Images/lesicon.png" style="height:60px;width: 60px;">  
+        </a>
+                    <h4>Back to Listening</h4>
+
+        </div>
+       <div id="playing">
+           <h2>let's play together</h2>
+           <h3>Drag The Letter And Drop it To The Image</h3>
+        
+        <div id="topdivs">
+            
+            
+             <img src="images/cat.png" width="120px" height="120px">
+             
+       <div class="cardsdivs"  id="card1"  ondrop="dropc(event)"  ondragover="allowDrop(event)">
+           
+            <span id="s1"></span>
+        </div>
+           <img src="images/applecard.jpg" width="120px" height="120px">
+        <div class="cardsdivs"  id="card2" ondrop="dropa(event)" ondragover="allowDrop(event)">
+            
+            <span id="s2"></span>
+        </div>
+             <img src="images/yellowcard.png" width="120px" height="120px">
+              <div class="cardsdivs"  id="card3" ondrop="dropy(event)" ondragover="allowDrop(event)">
+           
+            <span id="s3"></span>
+             </div>
+            <img src="images/elephantcard.jpg" width="120px" height="120px">
+             <div class="cardsdivs"  id="card4" ondrop="drope(event)" ondragover="allowDrop(event)">
+            
+            <span id="s4"></span>
+             </div>
+            <img src="images/s.jpg" width="120px" height="120px">
+              <div class="cardsdivs"  id="card5" ondrop="drops(event)" ondragover="allowDrop(event)">
+            
+            <span id="s5"></span>
+             </div>
+           <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div id="dragfrom" ondragover="allowDrop(event)"  ondrop="drop(event)" >
+<img id="drag1" src="./images/acard.jpg" draggable="true"  ondragstart="draga(event)" width="120px" height="120px">
+<img id="drag2" src="./images/ccard.gif" draggable="true"  ondragstart="draga(event)" width="120px" height="120px">
+<img id="drag3" src="./images/ycard.jpg" draggable="true"  ondragstart="draga(event)" width="120px" height="120px">
+<img id="drag4" src="./images/ecard.gif" draggable="true"  ondragstart="draga(event)" width="120px" height="120px">
+<img id="drag5" src="./images/scard.jpg" draggable="true"  ondragstart="draga(event)" width="120px" height="120px">
+
+        </div>
+
+           
+        </div>
+       
+  <div id="sticky">Copyright © 2019 KidsZone. All rights reserved.
+    
+    
+    
+    </div>
+           
+        <script src="EnglishBehvoiur.js"></script>
+            
+       
     </body>
 </html>

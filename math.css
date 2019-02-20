@@ -1,0 +1,220 @@
+#footer{
+    
+    width: 100%;
+    height: 250;
+    position: relative;
+    border-radius: 75px;
+}
+#alpha{position: absolute;border: 1px solid white;border-radius: 50px;margin-top: 250;
+     margin-left: 100;height: 100;width: 250;cursor: pointer}
+*{box-sizing: border-box;}
+#container{position: relative;margin-left: 280px}
+
+.myslides{display: none;
+cursor: pointer;
+    
+    
+    position: absolute;
+left: 130px;
+    top:70px;
+    
+    width:600px;
+    height: 300px;
+    
+    
+}
+@-webkit-keyframes fadein {
+    from {top: 40; opacity: 0;} 
+    to {top: 60px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 40; opacity: 0;}
+    to {top: 60px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 40px; opacity: 1;} 
+    to {top: 60; opacity: 0;}
+}
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snackbar1.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snackbar,#snackbar1 {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color:deeppink;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 30px;
+    font-size: 25px;
+}
+.prev,.next{cursor: pointer;
+position: absolute;
+    top: 40%;
+    right: 1290;
+    width: auto;
+    margin-top: 150;
+    padding: 16px;
+    color: aqua;
+    border-radius: 0 3px 3px 0;
+    
+}
+.prev{left: 50;height: 200;font-size: 120}
+.next{right: 230;border-radius: 3px 0 0 3px;height: 200;font-size: 120}
+.numbertext{color: #f2f2f2;font-size: 30px;padding: 8px 12px;position: absolute;top: 0;}
+#foot{width: 100%;height: 300;position: absolute;}
+#number,#num2,#num3,#num4,#num5,#num6,#num7,#num8,#num9,#num10{
+    text-align: center;
+    color: deepskyblue;
+    margin-left: 100;
+    margin-top: 70;
+    font-size: 50;
+    cursor: pointer;
+    position: relative;
+
+        
+}
+#foott{width: 100%;height: 200px}
+#main:hover{ 
+     cursor: pointer;
+        background-color: darkorange;
+         
+}
+#table{border: 1px solid red; cursor: pointer}
+#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9,#img10{height: 80;cursor: pointer}
+#first,#second{color: white;}
+#img3{height: 100}
+
+#image{width: 100px;height: 50px;margin-left: 80;border-radius: 50px;margin-top: 10;position: relative}
+#test{position: relative}
+
+#head{width: 50px; margin-left: 600;margin-top: 250}
+#back{
+     cursor: pointer;
+background-color: cornflowerblue;
+    box-shadow: 0px 10px 14px -7px #276873;
+    border-radius:8px;
+    color: whitesmoke;
+    position: relative;
+    outline:none;
+    
+    
+    
+    width: 200;border-radius: 50px; text-align: center;margin-top: 0;height: 70
+    
+}
+#add1{
+     cursor: pointer;
+background-color: cornflowerblue;
+    box-shadow: 0px 10px 14px -7px #276873;
+    border-radius:8px;
+    color: whitesmoke;
+    position: absolute;
+    outline:none;
+    
+    
+    
+    width: 200;border-radius: 50px; text-align: center;margin-top: 50;height: 70
+    
+}
+#sub1{
+     cursor: pointer;
+background-color: cornflowerblue;
+    box-shadow: 0px 10px 14px -7px #276873;
+    border-radius:8px;
+    color: whitesmoke;
+    position: absolute;
+    outline:none;
+    width: 200;border-radius: 50px; text-align: center;margin-top: 40;margin-left: 290;height: 70
+    
+}
+#mult1{
+     cursor: pointer;
+background-color: cornflowerblue;
+    box-shadow: 0px 10px 14px -7px #276873;
+    border-radius:8px;
+    color: whitesmoke;
+    position: absolute;
+    outline:none;
+    
+    
+    margin-left: 590;
+    width: 200;border-radius: 50px; text-align: center;margin-top: 20;height: 70
+    
+}
+
+#back1{
+    cursor: pointer;
+background-color: cornflowerblue;
+    box-shadow: 0px 10px 14px -7px #276873;
+    border-radius:8px;
+    color: whitesmoke;
+    position: absolute;
+    outline:none;
+    
+    
+    margin-left: -110;
+    width: 200;border-radius: 50px; text-align: center;margin-top:-10;height: 70
+}
+#back3{
+    cursor: pointer;
+background-color: cornflowerblue;
+    box-shadow: 0px 10px 14px -7px #276873;
+    border-radius:8px;
+    color: whitesmoke;
+    position: absolute;
+    outline:none;
+    
+    
+    margin-left: 190;
+    width: 200;border-radius: 50px; text-align: center;margin-top:170;height: 70
+}
+
+#resu{width: 100px;font-size: 50; height: 110; text-align: center; margin-left: 30px;border-radius: 50px;margin-top: 60;position: absolute;}
+
+#mark{font-size: 50;}
+
+#add{  margin-left: 300;margin-top: 10;height: 400px;position: relative;width: 800;}
+
+#score{margin-top: 120px;font-size: 30;position: absolute;color: white}
+
+#trufu{margin-left: 450;position: absolute;margin-top=90;margin-bottom: 350;width: 40px;height: 40px;border-radius: 50%;}
+
+#fals{border-radius: 50%;position: absolute;width: 190}
+
+#true{margin-left:30;position: absolute ;margin-top: 90;font-size: 30;background-color: chartreuse }
+
+#false{margin-left: 140;position: absolute;margin-top: 90;background-color: red;font-size: 30;}
+
+#final{font-size: 50;margin-left: 70;}
+
+
+#cen{
+   
+    height: 800;
+
+position: relative;
+    
+}
+
+
+#colo{position: absolute;border-radius: 50px;margin-top: 250;
+     margin-left: 400;height: 100;width: 250;cursor: pointer}
+#num{
+    position: absolute;border: 1px solid blue;cursor: pointer  ; background-color: cornflowerblue; border-radius: 50px;margin-top: 250;
+     margin-left: 700;height: 100;width: 250
+}

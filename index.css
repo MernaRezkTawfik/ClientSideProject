@@ -1,7 +1,8 @@
  body {
   margin: 0;
   padding: 0;
-  background-image:url("Images/1.jpg");
+  background-image:url("Images/light-grey-terrazzo.png");
+   
 }
  
 .nav ul {
@@ -55,3 +56,77 @@
      color:blueviolet;
        font-size:40pt
 }
+
+
+   h2{
+    
+     font-family: cursive;
+     color:orangered;
+       font-size:20pt;
+
+}
+
+
+p{
+    font-family: cursive;
+    font-size:14pt;
+    color: cadetblue;
+    
+}
+
+  #about p { float:left;height: auto; width:600px; margin-left:100px }
+    #about img { float:left;margin-left: 100pt;height:300px;width:300px }
+#about{
+    
+    margin-top:80px;
+    margin-bottom:500px
+}
+li{
+    font-family: cursive ;
+    color: crimson;
+    font-size: 15pt;
+    font-weight: 700;
+}
+#tips{margin-left: 20px;
+margin-right: 20px}
+
+
+
+
+#sticky {
+  width:100%;
+  padding:20px;
+  padding-bottom:16px;
+  background:orangered;
+  color:white;
+  font-weight:bold;
+  font-size:18px;
+  text-align:center;
+  position:fixed;    
+  bottom:0;          
+  left:0; 
+  height:10px
+ 
+}
+
+#goup{
+    display: inline;
+    position: absolute;
+    left:1240px;
+    top:1300px;
+    text-align: center;
+    color: blueviolet;
+    font-family: cursive;
+    
+}
+
+#goup img{
+    
+    height:60px;width: 60px;
+}
+
+
+
+
+
+

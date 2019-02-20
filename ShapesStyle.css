@@ -48,7 +48,7 @@ left: 130px;
 #bakbtn{
    position: absolute;
 left: 400px;
-    top:450px 
+    top:400px 
     
 }
 #vidoes{display:none;}
@@ -63,7 +63,8 @@ left: 400px;
     position: absolute;
     left: 200px;
      background-color:#ECF0F1;
-
+  border-radius: 6px;
+     box-shadow: 0 8px 15px -6px black;
 }
 #colorsdiv div{  cursor: pointer;}
 #colorsdiv{
@@ -76,7 +77,8 @@ left: 400px;
     margin-bottom:80px;
       background-color:#ECF0F1;
       
-
+  border-radius: 6px;
+     box-shadow: 0 8px 15px -6px black;
 }
 
 button{
@@ -354,8 +356,36 @@ left:350px;
     animation-direction: alternate;
      
 }
+#pallete{
+    display: inline;
+    position: absolute;
+    left:50px;
+    text-align: center;
+    color: blueviolet;
+    font-family: cursive;
+    
+}
+#backtotop{
+    display: inline;
+    position: absolute;
+    left:50px;
+    top:820px;
+    text-align: center;
+    color: blueviolet;
+    font-family: cursive;
+    
+}
+
+#pallete img{
+    
+    height:60px;width: 60px;
+}
 
 
+#backtotop img{
+    
+    height:60px;width: 60px;
+}
 @keyframes myAnimation {
             0% {
                 transform: scale(1);
